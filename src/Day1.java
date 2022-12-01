@@ -1,5 +1,5 @@
 /**
- * @author Dylan Worseling
+ * @author Dylan Worseling (500911345)
  */
 
 import java.io.File;
@@ -11,8 +11,7 @@ public class Day1 {
     public static void main(String[] args) {
 
         String data = null;
-        String calorieTekst = null;
-        int elfTotal = 0;
+        int elfTotaal = 0;
         int arrGrootte = 0;
 
         try {
@@ -47,10 +46,10 @@ public class Day1 {
             System.out.println("\nElf met meeste calorieën: " + elf[arrGrootte - 1]);
 
             for (int i = 1; i < 4; i++) {
-                elfTotal += elf[arrGrootte - i];
+                elfTotaal += elf[arrGrootte - i];
             }
 
-            System.out.println("\nTop 3 totale calorieën: " + elfTotal);
+            System.out.println("\nTop 3 totale calorieën: " + elfTotaal);
 
 
         } catch (FileNotFoundException e) {
