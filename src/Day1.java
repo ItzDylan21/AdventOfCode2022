@@ -15,6 +15,7 @@ public class Day1 {
         int arrGrootte = 0;
 
         try {
+            // Text file reader
             File myObj = new File("input/day1.txt");
             Scanner myReader = new Scanner(myObj);
 
@@ -26,9 +27,11 @@ public class Day1 {
                 }
             }
 
+            // Close and reinitialize reader
             myReader.close();
             myReader = new Scanner(myObj);
 
+            // Part 1
             System.out.println("\nArray grootte: " + arrGrootte);
             int elf[] = new int[arrGrootte];
 
@@ -45,6 +48,7 @@ public class Day1 {
             Arrays.sort(elf);
             System.out.println("\nElf met meeste calorieën: " + elf[arrGrootte - 1]);
 
+            // Part 2
             for (int i = 1; i < 4; i++) {
                 elfTotaal += elf[arrGrootte - i];
             }
